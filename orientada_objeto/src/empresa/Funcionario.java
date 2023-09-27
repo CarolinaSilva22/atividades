@@ -1,24 +1,25 @@
 package empresa;
 
-public class Funcionario {
-		private String nome, cargo, telefone,endereco;
-		private float salario;
-		private int idade;
+class Funcionario {
+    private String nome, cargo, telefone, endereco;
+    private int idade;
+    private double salario;
 
-		
-		public Funcionario() {
-			/**Atributos*/
-			this.nome = nome;
-			this.idade = idade;
-			this.cargo = cargo;
-			this.telefone = telefone;
-			this.endereco = endereco;
-			this.salario = salario;
-		}
-		/**Metodos*/
-		public String exibir() {
-			String info = "/nNome: "+nome+"/nIdade: "+idade+"/nCargo: "+cargo+"/nTelefone: "+telefone+"/nEndereço: "+endereco+"/nSalário: "+salario;
-			return (info);
-		}
+    public Funcionario(String nome, int idade, String cargo, double salario, String telefone, String endereco) {
+        this.nome = nome;
+        this.idade = idade;
+        this.cargo = cargo;
+        this.salario = salario;
+        this.telefone = telefone;
+        this.endereco = endereco;
+    }
 
+    public void exibe() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Cargo: " + cargo);
+        System.out.println("Salário: " + salario);
+        System.out.println("Telefone: " + telefone);
+        System.out.println("Endereço: " + endereco);
+    }
 }
