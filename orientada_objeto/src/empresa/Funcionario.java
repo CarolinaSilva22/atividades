@@ -15,11 +15,11 @@ class Funcionario {
     }
 
     public void exibe() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Cargo: " + cargo);
-        System.out.println("Salário: " + salario);
-        System.out.println("Telefone: " + telefone);
-        System.out.println("Endereço: " + endereco);
+        System.out.println("*Nome: " + nome);
+        System.out.println("*Idade: " + idade);
+        System.out.println("*Cargo: " + cargo);
+        System.out.println("*Salário: " + salario);
+        System.out.println("*Telefone: " + telefone);
+        System.out.println("*Endereço: " + endereco);
     }
 }
