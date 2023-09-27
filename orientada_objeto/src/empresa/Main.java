@@ -6,31 +6,31 @@ public class Main {
 
 	public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-   
-        System.out.print("Informe a quantidade de funcionários que deseja cadastrar: ");
+		
+        System.out.print("Digite quantos funcionários quer cadastrar: ");
         int tamanho = scanner.nextInt();
         
         Cadastro cadastro = new Cadastro(tamanho);
         
         for (int i = 0; i < tamanho; i++) {
-            System.out.println("Funcionário " + (i + 1) + ":");
+            System.out.println("Formulário - funcionário " + (i + 1) + ":");
 
-            System.out.print("Nome: ");
+            System.out.print("Insira o nome: ");
             String nome = scanner.next();
 
-            System.out.print("Idade: ");
+            System.out.print("Insira a idade: ");
             int idade = scanner.nextInt();
 
-            System.out.print("Cargo: ");
+            System.out.print("Insira o cargo: ");
             String cargo = scanner.next();
 
-            System.out.print("Salário: ");
+            System.out.print("Insira o salário: ");
             double salario = scanner.nextDouble();
 
-            System.out.print("Telefone: ");
+            System.out.print("Insira o telefone: ");
             String telefone = scanner.next();
 
-            System.out.print("Endereço: ");
+            System.out.print("Insira o endereço: ");
             String endereco = scanner.next();
 
             Funcionario novoFuncionario = new Funcionario(nome, idade, cargo, salario, telefone, endereco);
