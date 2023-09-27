@@ -31,7 +31,7 @@ public class ContaCorrente {
 	}
 	
 	public String exibir() {
-			String info = "\nNumero: " + numero + " - Agencia: " + agencia;
+			String info = "\nNumero: " + numero + " - Agencia: " + agencia + "\nSaldo: "+saldo;
 			return(info);
 		}
 	

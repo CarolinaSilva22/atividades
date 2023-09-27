@@ -17,14 +17,15 @@ public class Main {
 		System.out.print("Valor do deposito: ");
 		contaCorrente.depositar(input.nextDouble());
 		/**o metodo depositar é invocado */
-		System.out.println(contaCorrente.exibir());
+		
+		System.out.println("\nDados da conta após o deposito:" + contaCorrente.exibir());
 		
 		System.out.print("Valor do saque: ");
 		contaCorrente.sacar(input.nextDouble());
 		/**o metodo sacar é invocado*/
-		System.out.println(contaCorrente.exibir());
+	
+		System.out.println("Dados da conta após o saque:" + contaCorrente.exibir());
 		/**Retorna metodo exibir */
-		System.out.println("Saldo total: " + contaCorrente.consultarSaldo());
-		/**Retorna metodo consultar */
+		
 	}
 }
