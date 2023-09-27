@@ -13,14 +13,14 @@ class Cadastro {
         if (tamanho < funcionarios.length) {
             funcionarios[tamanho] = funcionario;
             tamanho++;
-            System.out.println("Funcionário cadastrado com sucesso!");
-        } else {
-            System.out.println("Cadastro está cheio. Não é possível adicionar mais funcionários.");
+            System.out.println("Funcionário cadastrado!!");
+         } else {
+            System.out.println("Não foi possivel adicionar mais funcionarios!!");
         }
     }
 
     public void imprimirCadastro() {
-        System.out.println("Lista de Funcionários:");
+        System.out.println("Lista de Funcionários cadastrados:");
         for (int i = 0; i < tamanho; i++) {
             funcionarios[i].exibe();
             System.out.println();
